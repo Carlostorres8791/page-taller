@@ -1,0 +1,19 @@
+<div class="galeria-container">
+  <h2 class="text-center">Nuestra Galería</h2>
+  <p class="text-center subtitulo">Algunos momentos de nuestro taller y trabajos realizados</p>
+
+  <!-- Marco principal -->
+  <div class="galeria-main">
+    <img [src]="imagenSeleccionada.src" [alt]="imagenSeleccionada.alt">
+  </div>
+
+  <!-- Carrusel de miniaturas -->
+  <div class="galeria-carrusel">
+    <div class="miniatura" 
+         *ngFor="let imagen of imagenes" 
+         (click)="seleccionarImagen(imagen)"
+         [class.activa]="imagen === imagenSeleccionada">
+      <img [src]="imagen.src" [alt]="imagen.alt">
+    </div>
+  </div>
+</div>

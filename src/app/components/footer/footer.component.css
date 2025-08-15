@@ -1,0 +1,8 @@
+:host footer {
+  display: block;
+  background-color: #000;
+  color: #ff6600;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+}

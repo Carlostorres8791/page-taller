@@ -1,0 +1,14 @@
+<div class="servicios-container">
+  <h2 class="text-center">Nuestros Servicios</h2>
+  <p class="text-center subtitulo">Diagnóstico Reparación y Mantenimiento profesional para tu moto</p>
+
+  <div class="cards">
+    <div class="card" *ngFor="let servicio of servicios">
+      <img [src]="servicio.imagen" [alt]="servicio.titulo">
+      <div class="card-content">
+        <h3>{{ servicio.titulo }}</h3>
+        <p>{{ servicio.descripcion }}</p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,35 @@
+<div class="contacto-container">
+  <h2 class="text-center">Contáctanos</h2>
+  <p class="text-center subtitulo">Déjanos un mensaje y nos pondremos en contacto contigo</p>
+
+  <div class="contacto-form-container">
+    <form (ngSubmit)="enviarFormulario()" #formContacto="ngForm">
+      <!-- Nombre -->
+      <div class="form-group">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" ngModel required>
+      </div>
+
+      <!-- Email -->
+      <div class="form-group">
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" ngModel required>
+      </div>
+
+      <!-- Mensaje -->
+      <div class="form-group">
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="5" ngModel required></textarea>
+      </div>
+
+      <button type="submit" [disabled]="!formContacto.valid">Enviar</button>
+    </form>
+  </div>
+
+  <!-- Información de contacto -->
+  <div class="contacto-info">
+    <p><strong>Teléfono:</strong>+57 311 7018463</p>
+    <p><strong>Correo:</strong> servico_tecnico_motocicletas&#64;gmail.com</p>
+    <p><strong>Localización:</strong>Pasto, Colombia</p>
+  </div>
+</div>

@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+/* Fondo negro global */
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: #000; /* fondo negro para toda la página */
+  color: #ff6600; /* color de texto global por defecto */
+  font-family: Arial, sans-serif;
+}
+
+/* Asegurar que los componentes ocupen todo el ancho */
+app-root, .app-root {
+  display: block;
+  width: 100%;
+  background-color: #000;
+}
+
+/* Icono hamburguesa color naranja */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23ff6600' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
