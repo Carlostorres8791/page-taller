@@ -1,35 +1,15 @@
 <div class="contacto-container">
   <h2 class="text-center">Contáctanos</h2>
-  <p class="text-center subtitulo">Déjanos un mensaje y nos pondremos en contacto contigo</p>
+  <p class="text-center subtitulo">Escríbenos por WhatsApp y nos pondremos en contacto contigo</p>
 
-  <div class="contacto-form-container">
-    <form (ngSubmit)="enviarFormulario()" #formContacto="ngForm">
-      <!-- Nombre -->
-      <div class="form-group">
-        <label for="nombre">Nombre</label>
-        <input type="text" id="nombre" name="nombre" ngModel required>
-      </div>
+  <div class="contacto-card">
+    <p><strong class="tel">Teléfono:</strong> +57 311 7018463</p>
+    <p><strong class="mail">Correo:</strong> servicio_tecnico_motocicletas&#64;gmail.com</p>
+    <p><strong class="loc">Localización:</strong> Pasto, Colombia</p>
 
-      <!-- Email -->
-      <div class="form-group">
-        <label for="email">Correo electrónico</label>
-        <input type="email" id="email" name="email" ngModel required>
-      </div>
-
-      <!-- Mensaje -->
-      <div class="form-group">
-        <label for="mensaje">Mensaje</label>
-        <textarea id="mensaje" name="mensaje" rows="5" ngModel required></textarea>
-      </div>
-
-      <button type="submit" [disabled]="!formContacto.valid">Enviar</button>
-    </form>
-  </div>
-
-  <!-- Información de contacto -->
-  <div class="contacto-info">
-    <p><strong>Teléfono:</strong>+57 311 7018463</p>
-    <p><strong>Correo:</strong> servico_tecnico_motocicletas&#64;gmail.com</p>
-    <p><strong>Localización:</strong>Pasto, Colombia</p>
+    <!-- Botón WhatsApp -->
+    <a href="https://wa.me/573117018463?text=Hola%20Carlos%20Torres,%20quiero%20información" target="_blank" class="btn-whatsapp">
+      <i class="bi bi-whatsapp"></i> Enviar WhatsApp
+    </a>
   </div>
 </div>
