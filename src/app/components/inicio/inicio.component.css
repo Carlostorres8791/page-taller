@@ -1,5 +1,5 @@
 .hero {
-  background: url('./assets/fachada2.jpg') center/cover no-repeat;
+  background: url('/assets/galeria/fachada2.jpg') center/cover no-repeat;
   height: 70vh;
   position: relative;
   display: flex;
