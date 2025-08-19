@@ -1,7 +1,10 @@
-<section class="hero d-flex align-items-center justify-content-center text-center">
-  <div class="text-center">
-    <h1>Bienvenido a TecniMotors</h1>
-    <p>Reparación y mantenimiento profesional de tu moto</p>
-    <a routerLink="/servicios" class="btn btn-hero">Conoce nuestros servicios</a>
+<section class="hero d-flex align-items-center justify-content-center text-center" [ngStyle]="{'background-image': 'url(' + backgroundUrl + ')'}">
+  <div class="text-center" >
+    <h1>Ing.Carlos Torres</h1>
+    <h1>Técnico Especializado en Motocicletas</h1>
+    <p class="text-white mb-4">
+      Reparación, mantenimiento y cuidado profesional para tu moto.
+    </p>
+    <a routerLink="/servicios" class="btn btn-hero">Conoce mis servicios</a>
   </div>
 </section>

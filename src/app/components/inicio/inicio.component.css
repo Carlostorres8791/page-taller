@@ -1,12 +1,16 @@
 .hero {
-  background: url('/assets/galeria/fachada2.jpg') center/cover no-repeat;
-  height: 70vh;
+  height:70vh;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   overflow: hidden;
+
+  /* 👇 Fondo responsivo */
+  background-size: cover;        /* que la imagen ocupe todo el contenedor */
+  background-position: center;   /* centrada */
+  background-repeat: no-repeat;  /* que no se repita */
 }
 
 /* Overlay degradado oscuro para mejorar contraste */
