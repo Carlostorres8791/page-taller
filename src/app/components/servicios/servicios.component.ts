@@ -14,33 +14,38 @@ export class ServiciosComponent {
     {
       titulo: 'Cambio de Aceite',
       descripcion: 'Asesoramiento para que tu motor use el mejor lubricante de tu elección para un rendimiento óptimo.',
-      imagen: './assets/servicio1.jpg'
+      imagen: './assets/servicio1.jpg',
+      ruta: '/cambio-aceite'      
     },
-    {
+    {     
       titulo: 'Revisión del Sistema Eléctrico',
       descripcion: 'Garantizamos la estabilidad y seguridad del sistema eléctrico para tu moto.',
-      imagen: './assets/servicio2.jpg'
+      imagen: './assets/servicio2.jpg',
+      ruta: '/sistema-electrico'
     },
     {
       titulo: 'Revisión de Frenos',
       descripcion: 'Revisión del sistema de frenos para que siempre esten eficientes y confiables.',
-      imagen: './assets/servicio3.jpg'
+      imagen: './assets/servicio3.jpg',
+      ruta: '/frenos'
     },
-    {
+    {     
       titulo: 'Mantenimiento General',
       descripcion: 'Chequeos completos para que tu moto siempre esté en forma.',
-      imagen: './assets/servicio4.jpg'
+      imagen: './assets/servicio4.jpg',
+      ruta: '/mto-general'
     },
-    {
+    {     
       titulo: 'Mantenimiento Preventivo',
       descripcion: 'Chequeos completo para poder prevenir futuros daños.',
-      imagen: './assets/servicio5.jpg'
+      imagen: './assets/servicio5.jpg',
+      ruta: '/mto-preventivo'
     },
-    {
+    {     
       titulo: 'Mantenimiento Correctivo',
       descripcion: 'Chequeos completos para correcion de fallas puntuales previamente diagnosticadas .',
-      imagen: './assets/servicio6.jpg'
+      imagen: './assets/servicio6.jpg',
+      ruta: '/mto-correctivo'
     }
   ];
-
 }

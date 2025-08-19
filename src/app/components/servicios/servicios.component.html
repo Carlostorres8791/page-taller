@@ -7,7 +7,8 @@
       <img [src]="servicio.imagen" [alt]="servicio.titulo">
       <div class="card-content">
         <h3>{{ servicio.titulo }}</h3>
-        <p>{{ servicio.descripcion }}</p>
+        <p>{{ servicio.descripcion }}</p>  
+        <button class="buton rounded-pill px-4 shadow-sm" [routerLink]="servicio.ruta">Ver más</button>
       </div>
     </div>
   </div>
