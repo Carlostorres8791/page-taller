@@ -1,0 +1,19 @@
+.cambio-aceite-container {
+  max-width: 700px;
+  margin: auto;
+}
+
+img {
+  max-height: 500px;
+  object-fit: cover;
+}
+
+.buton{
+  background-color: #ff6600;
+  color: black;
+    
+}
+
+.texto{
+    color: #ccc;   
+}

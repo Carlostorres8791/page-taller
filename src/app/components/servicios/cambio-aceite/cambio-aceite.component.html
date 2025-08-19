@@ -1,1 +1,19 @@
-<p>cambio-aceite works!</p>
+<div class="cambio-aceite-container container mt-5">
+  <h2 class="text-center">{{ titulo }}</h2>
+  <p class="text-center texto">{{ descripcion }}</p>
+
+  <div class="text-center">
+    <img [src]="imagen" alt="Imagen del servicio" class="img-fluid rounded shadow">
+  </div>
+
+  <h4 class="mt-4">Detalles importantes:</h4>
+  <ul class="list-group">
+    <li class="list-group-item" *ngFor="let detalle of detalles">
+      {{ detalle }}
+    </li>
+  </ul>
+
+  <div class="text-center mt-4">
+    <a routerLink="/servicios" class="buton btn btn-primary">Volver a Servicios</a>
+  </div>
+</div>
