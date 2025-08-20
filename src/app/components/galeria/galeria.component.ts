@@ -26,4 +26,16 @@ export class GaleriaComponent {
     this.imagenSeleccionada = imagen;
   }
 
+  anteriorImagen() {
+    const index = this.imagenes.indexOf(this.imagenSeleccionada);
+    const nuevoIndex = (index - 1 + this.imagenes.length) % this.imagenes.length;
+    this.imagenSeleccionada = this.imagenes[nuevoIndex];
+  }
+
+  siguienteImagen() {
+    const index = this.imagenes.indexOf(this.imagenSeleccionada);
+    const nuevoIndex = (index + 1) % this.imagenes.length;
+    this.imagenSeleccionada = this.imagenes[nuevoIndex];
+  }
+
 }

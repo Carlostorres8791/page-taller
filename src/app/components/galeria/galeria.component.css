@@ -28,6 +28,7 @@
   border-radius: 10px;
   overflow: hidden;
   margin-bottom: 1.5rem;
+  position: relative; /* Para ubicar las flechas */
 }
 
 .galeria-main img {
@@ -36,6 +37,34 @@
   object-fit: cover;
   border-radius: 10px;
   transition: transform 0.3s;
+}
+
+/* Botones de navegación */
+.btn-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: #ff6600;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 50%;
+  transition: background 0.3s;
+  z-index: 2;
+}
+
+.btn-nav:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.btn-nav.izquierda {
+  left: 450px;
+}
+
+.btn-nav.derecha {
+  right: 450px;
 }
 
 /* Carrusel de miniaturas */
@@ -70,3 +99,5 @@
 .miniatura.activa {
   border: 2px solid #ff6600;
 }
+
+

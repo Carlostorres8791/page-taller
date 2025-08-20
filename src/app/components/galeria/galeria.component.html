@@ -2,9 +2,13 @@
   <h2 class="text-center">Nuestra Galería</h2>
   <p class="text-center subtitulo">Algunos momentos de nuestro taller y trabajos realizados</p>
 
-  <!-- Marco principal -->
+  <!-- Marco principal con flechas -->
   <div class="galeria-main">
+    <button class="btn-nav izquierda" (click)="anteriorImagen()">&#10094;</button>
+    
     <img [src]="imagenSeleccionada.src" [alt]="imagenSeleccionada.alt">
+
+    <button class="btn-nav derecha" (click)="siguienteImagen()">&#10095;</button>
   </div>
 
   <!-- Carrusel de miniaturas -->
