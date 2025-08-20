@@ -9,6 +9,7 @@ import { SistemaElectricoComponent } from './components/servicios/sistema-electr
 import { MtoGeneralComponent } from './components/servicios/mto-general/mto-general.component';
 import { MtoPreventivoComponent } from './components/servicios/mto-preventivo/mto-preventivo.component';
 import { MtoCorrectivoComponent } from './components/servicios/mto-correctivo/mto-correctivo.component';
+import { SobreMiComponent } from './components/sobre-mi/sobre-mi.component';
 
 export const routes: Routes = [
     { path: '', component: InicioComponent },
@@ -20,5 +21,6 @@ export const routes: Routes = [
     { path: 'mto-preventivo', component: MtoPreventivoComponent },
     { path: 'mto-correctivo', component: MtoCorrectivoComponent },
     { path: 'galeria', component: GaleriaComponent },
+    { path: 'sobre-mi', component: SobreMiComponent },
     { path: 'contacto', component: ContactoComponent }
 ];

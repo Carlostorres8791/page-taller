@@ -1,0 +1,16 @@
+.sobre-mi-container {
+  background: #696666; /* gris claro elegante */
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  color: white;
+}
+
+.foto-perfil {
+  max-width: 200px;
+  border: 2px solid #ff6600; 
+}
+
+.buton{
+  background-color: #ff6600;
+  
+}
